@@ -1,6 +1,6 @@
 // Get day number
 //Moved dayNameList into function
-//added 'use strict'
+//added 'use strict'11
 //Changed bad names
 //Added const before getDayIndex
 //Now we are using for...of insted of for with i
