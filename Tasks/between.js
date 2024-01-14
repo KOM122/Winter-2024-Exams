@@ -1,5 +1,5 @@
 // Extract substring between prefix and suffix1
-11
+1111
 getvaluebetween = (str, p, s) => {
   i = str.indexOf(p);
   if (i === -1) return '';
