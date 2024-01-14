@@ -1,5 +1,5 @@
 // Compare two dictionaries
-
+11
 let compare = (first_values, ...parameters_LIST) => {
   const second_values = parameters_LIST[0];
   let a = Object.keys(first_values);
