@@ -1,15 +1,20 @@
 // Get day number
+//Moved dayNameList into function
+//added 'use strict'
+//Changed bad names
+//Added const before getDayIndex
+//Now we are using for...of insted of for with i
+//deleted let i because we don't need it anymore
 
-let D = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-_parse_day_ = (s) => {
-  let i;
-  for (i = 0; i < D.length; i++) {
-    if (s.startsWith(D[i].toLowerCase())) {
-      return i + 1;
-    }
+'use strict'
+
+const getDayIndex = (dayName) => {
+  let dayNameList = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+for (const [index, day] of dayNameList.entries()) {
+    if (dayName.indexOf(day.toLowerCase()) == 0) return index + 1;
   }
   return -1;
 };
 
-module.exports = _parse_day_;
+module.exports = getDayIndex;
